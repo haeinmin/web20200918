@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div1 div {
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* 이때 결국 선택되는 것은 div임
+        그런데 어떤 div냐? class가 div1인 것. */
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Ipsa, fuga laboriosam.</div>
+        <div>Dicta, atque labore.</div>
+        <div>
+            <div>Lorem, ipsum dolor.</div>
+        </div>
+    </div>
+
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Distinctio, praesentium itaque.</div>
+        <div>Perspiciatis, reprehenderit hic.</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+
+        .my-menu {
+            background-color: black;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .my-items {
+            color: violet;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px 10px;
+        }
+
+        .my-items:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #dummy {
+            flex: 1;
+        }
+
+        .main-container {
+            display: flex;
+            margin-top: 25px;   
+        }
+
+
+       .side-bar {
+           width: 200px;
+           border: 5px solid black;
+           
+       }
+
+       .main-content {
+           flex: 1;
+           border-style: solid;
+           border-color: black;
+           border-width: 5px 0px;
+       }
+
+       .ad-bar {
+           width: 200px;
+           border: 5px solid black;
+       }
+
+       .sub-menu {
+           display: none;
+           position: absolute; /* 정상적 배치흐름에서 빠지도록 */
+           top: 80px;
+           left: 0px;
+           padding: 10px;
+           background-color: white;
+           border-top: 5px violet;
+       }
+
+       /* hover 시에만 보이도록 일단 숨김 */
+
+       .my-items:hover .sub-menu { /* menu item hover 시에만의 sub-menu */
+             display: block;
+       }
+
+        .my-items {
+           position: relative;
+       } 
+
+    </style>
+</head>
+<body>
+    <div class="my-menu">
+        <div class="my-items">
+            TUTORIALS <i class="fas fa-caret-down"></i>
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Odio.</div>
+                <div class="sub-item">Officiis?</div>
+                <div class="sub-item">Eum.</div>
+                <div class="sub-item">Molestiae!</div>
+            </div>
+        </div>
+        <div class="my-items">REFERENCES <i class="fas fa-caret-down"></i>
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Odio.</div>
+                <div class="sub-item">Officiis?</div>
+                <div class="sub-item">Eum.</div>
+                <div class="sub-item">Molestiae!</div>
+            </div>
+        </div>
+        <div class="my-items">EXERCISES <i class="fas fa-caret-down"></i>
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Odio.</div>
+                <div class="sub-item">Officiis?</div>
+                <div class="sub-item">Eum.</div>
+                <div class="sub-item">Molestiae!</div>
+            </div>
+        </div>
+        <div id="dummy"></div>
+        <div class="my-items"><i class="fas fa-globe-americas"></i></div>
+        <div class="my-items"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-container">
+        <div class="side-bar">
+            <div>
+                <div>Lorem.</div>
+                <div>Numquam.</div>
+                <div>Obcaecati.</div>
+                <div>Ex.</div>
+                <div>Minus.</div>
+                <div>Quia.</div>
+                <div>Rerum?</div>
+                <div>Ullam.</div>
+                <div>Voluptatibus!</div>
+                <div>Reprehenderit?</div>
+                <div>Eos.</div>
+                <div>Aut!</div>
+                <div>Saepe?</div>
+                <div>Consequatur.</div>
+                <div>Repellat!</div>
+                <div>Ullam.</div>
+                <div>Illo?</div>
+                <div>Incidunt.</div>
+                <div>Ullam.</div>
+                <div>Ratione.</div>
+                <div>Odit.</div>
+                <div>Vel.</div>
+                <div>Hic?</div>
+                <div>Optio?</div>
+                <div>Magni!</div>
+                <div>Minus!</div>
+                <div>Cum.</div>
+                <div>Expedita.</div>
+                <div>Ex.</div>
+                <div>Ab!</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ex repellendus magni non nihil, suscipit incidunt vitae repudiandae doloremque temporibus?</p>
+            <h1>Ullam incidunt ducimus et amet.</h1>
+            <p>Velit itaque enim nemo repudiandae eius. Illum est nesciunt ratione ducimus? Obcaecati itaque minima suscipit sapiente cupiditate ipsum tempora optio.</p>
+            <h1>Fuga delectus repellendus sit asperiores.</h1>
+            <p>Magnam voluptatibus nesciunt eaque dolore suscipit, iste modi veniam molestias dolor reprehenderit mollitia pariatur nihil, praesentium fugiat aliquam provident ut?</p>
+            <h1>Officia, cumque perspiciatis. Dolorum, et!</h1>
+            <p>Animi, ab deserunt atque et veritatis, error ducimus pariatur natus est omnis voluptatem quia hic sed repudiandae temporibus culpa optio.</p>
+            <h1>Deserunt cum ex quasi impedit.</h1>
+            <p>Eaque illo nisi laudantium ipsam neque qui error obcaecati deleniti, optio fugit expedita sint quidem nihil dolor numquam repudiandae ut.</p>
+            <h1>Corporis rerum esse dicta modi.</h1>
+            <p>Rem, laboriosam! Minus voluptatibus, ad velit magni eum odio non ea libero et eaque vero minima veniam! Quae, nam accusantium.</p>
+            <h1>Deleniti non cum nobis vel.</h1>
+            <p>Porro, adipisci quas. Officiis aspernatur, ea assumenda incidunt quo hic eligendi sed aperiam voluptate obcaecati? Error consequuntur et fugiat cumque?</p>
+            <h1>Corrupti aliquam perferendis quod ea?</h1>
+            <p>Nulla explicabo a reprehenderit quasi, id unde fuga harum quo vero quae beatae officiis voluptate adipisci labore ratione maxime expedita.</p>
+            <h1>Voluptatibus debitis consequuntur tenetur explicabo?</h1>
+            <p>Explicabo itaque iusto quas expedita sequi, aliquam fugiat quo eius minus dolorum nihil architecto mollitia incidunt quidem dicta excepturi nemo?</p>
+            <h1>Harum illum voluptatem distinctio soluta!</h1>
+            <p>In ipsum, temporibus veniam repudiandae accusamus consectetur inventore id sit, laboriosam hic qui! Dolore autem corrupti sequi laborum aliquam sed.</p>
+        </div>
+        <div class="ad-bar"></div>
+    </div>
+</body>
+</html>

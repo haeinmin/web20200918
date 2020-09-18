@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: chocolate;
+            text-decoration: underline;
+        }
+        /* specificity가 11점임. 왜? 여기서 hover는 class
+        단, 우리가 지정한 적이 없는 가짜 class이므로 psuedo class라 부름 */
+    </style>
+</head>
+<body>
+    <a href="https://www.duck.com">duckduckgo</a>
+</body>
+</html>
+
+    <!-- a:link - a normal, unvisited link
+        a:visited - a link the user has visited
+        a:hover - a link when the user mouses over it
+        a:active - a link the moment it is clicked -->
+        <!-- 위의 순서를 지킬 것 -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #div1
+        {background-color: blue;
+        width: 500px;
+        height: 200px;
+        font-size: 50px;
+        text-align: right;
+        color: white;}
+        #div2
+        {background-color:yellow;
+        width: 100px;}
+        #div3
+        {background-color: red;}
+        #div4
+        {background-color: greenyellow;}
+        #div5
+        {background-color: black;}
+
+        /* @@@@@@@@@@질문@@@@@@@@@@@@@
+        div3,4,5 같은 경우 height 따로 지정 안 했으면 parent element 따라야 하는 거 아닌지?
+        왜 쪼그라드는지? */
+
+        .container {
+            display: flex;
+            height: 500px;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div1>div {
+        text-decoration: underline;
+        /* 두 element가 >로 연결되어 있음.
+        여기서는 div가 선택이 되겠지만 div1의 자식인 것만. */
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Aliquid, tempore. Accusantium.</div>
+        <div>Commodi, rem incidunt.</div>
+        <div>
+            <div>Lorem, ipsum dolor.</div>
+        </div>
+    </div>
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Eveniet, distinctio neque?</div>
+        <div>Obcaecati, numquam officiis.</div>
+    </div>
+</body>
+</html>

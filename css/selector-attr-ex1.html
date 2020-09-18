@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [target] {
+            border: 5px solid black;
+        }
+
+        [tooltip] {
+            border: 5px dotted blue;
+        }
+
+        /* <!-- [aaaa]에 해당하는 attribute를 가진 element들에 적용 -->
+        조금 더 specific하게 지정하고 싶다면 아래와 같이 */
+
+        [tooltip="link 1"] {
+            border: 3px dashed pink;
+        }
+
+        a[title] {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="#" target="_blank">Lorem, ipsum dolor.</a>
+    <a href="#" target="_blank">Doloremque, aliquid ipsa!</a>
+    <a href="#" tooltip="link 1">Eaque, animi nihil.</a>
+    <a href="#" tooltip="link 2">Atque, ipsum culpa?</a>
+    <a href="#" tooltip="link 3">Corporis, ad nam.</a>
+
+    <a href="#" title="">Lorem, ipsum dolor.</a>
+    <!-- a[title] -->
+</body>
+</html>

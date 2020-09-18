@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #myheader {
+            color:turquoise;
+        }
+
+        h1.my.your {
+            color: green;
+        }
+
+        .my.your{
+            color:pink;
+        }
+
+        h1.my {
+            color:gold;
+        }
+
+        .my {
+            color: blue;
+        }
+
+        h1 {
+            color: red;
+        }
+        h1 {
+            color: yellow;
+        }
+
+        /* specificity의 레벨이 같을 경우 순서가 중요.
+        더욱 specific한 selector의 것을 적용함.
+        ID is regarded as the second most specific selector.
+        inline css is regarded as the most specific selector.
+        cf) id: 100 points / class: 10 points / element: 1 point */
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="my your" id="myheader" style="color:purple;">Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>

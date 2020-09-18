@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #div {
+            margin: 5px;
+            padding: 10px;
+            border: 5px solid blue;
+            background-color: yellow;
+
+            height: 200px;
+            width: 300px;
+            /* content의 너비임
+            우리 눈에 보이는 건 content+padding+border
+            따라서 box-sizing이라는 걸 만들었음
+            ex. border-box로 설정할 경우 border까지를 포함한 크기가 200.300이 됨 */
+
+            box-sizing: border-box;
+        }
+    </style>
+</head> 
+<body>
+    <div id="div"></div>
+</body>
+</html>

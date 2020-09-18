@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            height: 200px;
+            background-color: yellow;
+            border: 5px solid black;
+        }
+        #div1 {
+            margin: 50px 20px 100px 5px;
+            /* below is same as the above (clockwise)
+             margin-top: 50px;
+            margin-right: 20px;
+            margin-bottom: 100px;
+            margin-left: 5px; */
+
+            /* BUT margin: 50px 60px 50px 처럼 값을 세개만 작성할 경우,
+            위 좌우 아
+            margin: 60px 60px처럼 값 두개만 작성할 경우, 상하 / 좌우 */
+        }
+        /* margin은 테두리 밖의 영역. 즉, element간의 간격 */
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

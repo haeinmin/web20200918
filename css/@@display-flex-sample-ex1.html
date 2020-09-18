@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+
+        .my-menu {
+            display: flex;
+            background-color: black;
+            height: 80px;
+            align-items: center;
+        }
+
+        .menu-item {
+            color: violet;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px 10px;
+        }
+
+        .menu-item:hover {
+            color: black;
+            background-color: #fff;
+        }
+
+        #dummy {
+            flex: 1;
+        }
+
+        .main-container {
+            margin-top: 30px;
+            display: flex;
+            /* height: 500px; */
+            /* content에 따라 높이 조절이 되기 위하여 삭제 */
+        }
+
+        .main-container > div {
+            border: 5px solid black;
+            /* flex: 1;  */
+            /* 같은 간격으로 1/3씩 너비를 가짐
+            but 아래와 같이 가운데만 flex 지정할 경우 삭제해야 함.
+            왜? 얘는 specificity가 11점이라서 얘가 우선될 거라 */
+            
+        }
+
+/* 창의 크기를 왔다갔다 할 때side bar, ad 부분은 고정시키고 가운데만 확장 가능하게 하려면 side,ad는 fixed / 가운데는 stretch */
+
+        .side-menu {
+            width: 200px;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .ad-container {
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="my-menu">
+        <div class="menu-item">TUTORIALS <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">REFERENCES <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">EXERCISES <i class="fas fa-caret-down"></i></div>
+        <div id="dummy"></div>
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-container">
+        <div class="side-menu">
+            <div>Lorem.</div>
+            <div>Atque?</div>
+            <div>Deleniti.</div>
+            <div>Aspernatur.</div>
+            <div>Itaque.</div>
+            <div>Alias.</div>
+            <div>Sequi.</div>
+            <div>Omnis.</div>
+            <div>Iusto!</div>
+            <div>Necessitatibus.</div>
+            <div>Magnam!</div>
+            <div>Totam.</div>
+            <div>Ipsam?</div>
+            <div>Delectus.</div>
+            <div>Eligendi.</div>
+            <div>Asperiores!</div>
+            <div>Voluptatem?</div>
+            <div>Necessitatibus.</div>
+            <div>Tenetur!</div>
+            <div>Deleniti.</div>
+            <div>Aliquid.</div>
+            <div>Tenetur.</div>
+            <div>Numquam.</div>
+            <div>Nesciunt.</div>
+            <div>Soluta?</div>
+            <div>Odio?</div>
+            <div>Consequuntur?</div>
+            <div>Obcaecati.</div>
+            <div>Laudantium.</div>
+            <div>Minus?</div>
+        </div>
+        <div class="main-content">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima quaerat nisi placeat autem accusamus? Corrupti, officiis, nisi porro dolorem molestias ex debitis a, neque maxime eius libero vero dignissimos.</p>
+            <h1>Quod, perspiciatis facere!</h1>
+            <p>Aperiam eveniet cupiditate ea similique delectus, impedit inventore consectetur sunt aliquam possimus minus ex sint iste dolor, ipsam ut fugit est! Obcaecati, saepe doloribus? Esse expedita ab modi quo dicta.</p>
+            <h1>Praesentium, animi sed!</h1>
+            <p>Recusandae esse molestias cupiditate blanditiis rerum aut explicabo accusamus unde repellat, id provident sequi facere a exercitationem delectus sapiente deleniti ipsam eius distinctio nihil adipisci tempore qui quos. Repudiandae, nihil.</p>
+            <h1>Saepe, modi aspernatur.</h1>
+            <p>Non, dolor magnam id, dolore accusantium alias quis facilis aut nostrum perferendis at placeat doloremque ut reiciendis fugiat obcaecati qui! Distinctio, hic sint perferendis sapiente deserunt repellat modi maiores ipsum?</p>
+            <h1>Quo, reiciendis saepe?</h1>
+            <p>Assumenda eaque quae magnam eveniet perspiciatis recusandae excepturi distinctio voluptatem laudantium fugiat facilis exercitationem fuga enim minima, doloribus adipisci voluptate praesentium quaerat sapiente debitis. Fuga nostrum iste neque architecto inventore?</p>
+            <h1>Officiis, reiciendis aspernatur.</h1>
+            <p>Dolor minus quas repellat quasi libero earum nemo error, ad quis voluptatibus in vel perferendis labore deserunt ex officiis quaerat! Ad exercitationem obcaecati suscipit dolorem accusantium iste voluptate magni provident.</p>
+            <h1>Voluptas, illum non.</h1>
+            <p>Veritatis, enim corrupti reprehenderit sunt quod quia aliquam recusandae ullam, animi officia eveniet modi, atque asperiores aspernatur quibusdam. Cumque quos numquam enim totam, laudantium mollitia aperiam doloremque dolorem dolores architecto.</p>
+            <h1>Eligendi, maxime! Sapiente!</h1>
+            <p>Dolores rem obcaecati hic, dicta quae expedita? Rerum error maiores repellendus vitae praesentium aspernatur minima commodi quos! Illo tempore quod, ipsam provident, at sequi quaerat, numquam perferendis voluptatem in qui!</p>
+            <h1>Eius, totam tempora.</h1>
+            <p>Maiores ducimus quasi voluptates est quo soluta accusantium ad harum temporibus repellendus enim consequatur perspiciatis corrupti, distinctio quod odio repellat! A quam ipsum repellendus fugiat eaque minima accusantium facere quo.</p>
+            <h1>Aspernatur, aperiam nulla.</h1>
+            <p>Quam nostrum labore accusamus corporis magnam! Fuga nulla eaque dolores harum rerum dolorem soluta totam rem accusantium velit culpa ut optio vel deleniti fugit voluptas dolorum, saepe quae ducimus maiores.</p>
+        </div>
+        <div class="ad-container">
+            
+        </div>
+    </div>
+</body>
+</html>
