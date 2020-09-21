@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var a = "5";
+        var c = "6";
+        console.log(a+c); //56 (string type간의 덧셈이므로)
+        
+        var d = Number(a);
+        var e = Number(c);
+        console.log(d+e); //30 
+
+        var f = "" + d; //number -> string 변환
+
+        var g = "3.14";
+        console.log(Number(g));
+        console.log(parseFloat(g));
+        console.log(parseInt(g)); //정수부분만
+
+    </script>
+</body>
+</html>
