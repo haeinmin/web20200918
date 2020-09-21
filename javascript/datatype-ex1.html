@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var a = 5;
+        var b = 7;
+
+        console.log(a+b);
+
+        var c = "hello"; //string
+        console.log(c);
+
+        //string과 다른 타입과 + 연산의 결과는 string
+        var d = a+c; //결과: 5hello
+        console.log(d);
+
+        var e = "3";
+        var f = 2;
+        console.log(e+f); //결과: 32 three & two not thirtytwo
+
+        var g = "4";
+        var h = "5";
+        console.log(g-h);
+        console.log(g*h);
+        console.log(g/h);
+        // string 타입이지만 두 연산자가 모두 string type이기 때문에 수처럼 연산됨
+
+        var i = "blue";
+        var j = "sky";
+        console.log(i+j);
+
+        console.log(2+3+"sky"); //결과 5sky
+        console.log(2+"sky"+3); //2sky3
+        console.log(2+(3+"sky")); //23sky
+ 
+
+    </script>
+</body>
+</html>
