@@ -51,6 +51,8 @@
             var num2 = document.getElementById("input2").value;
             // num1 = Number(num1);
             // num2 = Number(num2);
+            //이 경우 string type 간의 비교가 됨. 따라서 2>11을 true로 받아들임.
+            //만약 하나만 string이라면 js는 이를 number로 바꾸어 비교하려 노력함.
 
             var res = num1 > num2;
             document.getElementById("result").innerHTML = res;
