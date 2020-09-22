@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <style>
+
+        .me {
+            width: 100px;
+            height: 100px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=container>
+
+    <button class="me" onclick="rpsGame()"><i class="fas fa-hand-rock"></i></button>
+    <button class="me" onclick="rpsGame()"><i class="fas fa-hand-paper"></i></button>
+    <button class="me" onclick="rpsGame()"><i class="fas fa-hand-scissors"></i></button>
+    <br>
+
+    <img src="" alt="" id="computer">
+
+    <p id="result"></p>
+
+    </div>
+    <script>
+        function rpsGame() {
+            var r = Math.floor(Math.random()*3)+1;
+            var fileName = "rps" + r + ".png"
+            document.getElementById("computer").src = fileName;
+
+            document.getElementById("result").innerHTML="이겼습니다.";
+            document.getElementById("result").innerHTML="비겼습니다.";
+            document.getElementById("result").innerHTML="졌습니다.";
+
+            //if 활용하여 조건문 만들기 위해 Booleans(새로운 데이터 타입), Comparisons(새로운 연산 타입) 배울 것
+            //Boolean = True or False
+        }
+    </script>
+</body>
+</html>
