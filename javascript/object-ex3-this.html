@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var car = {
+            name: "kia",
+            color: "black",
+            description: function () {
+                console.log(this.name + "," + this.color);
+                //this라는 키워드를 넣어줘야 동일 객체 내에서의 속성을 불러올 수 있음
+                //아닌 이상 아직 할당되기 이전이므로 알 수 없음
+            }
+        }
+
+        car.description();
+        car.color = "white";
+        car.description();
+
+    </script>
+</body>
+</html>

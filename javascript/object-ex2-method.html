@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        function show() {
+            console.log("print input element at p")
+            var txt = document.getElementById("input1").value;
+            //위를 보면 getElementById 또한 document의 method
+            document.getElementById("para1").innerHTML = txt;
+        }
+
+        var car = {
+            name: "kia",
+            color: "white",
+            // function start() {
+            start: function() { //문법상 이렇게 작성해야
+                console.log("출발하는 기능"); //세번쨰 statement는 함수: 함수를 property로 갖고 있을 경우 method라 부름
+            }
+        };
+
+        console.log(car.name); //console.log의 문법을 보면 log가 console의 method였음을 알 수 있음
+        show();
+        car.start();
+    </script>
+</body>
+</html>

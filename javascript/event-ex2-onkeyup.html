@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input onkeyup="show()" type="text" id="input1">
+    <!-- 키를 눌렀다 뗐을 때 이벤트가 생기도록 하는 attribute -->
+    <p id="result"></p>
+    <script>
+        
+        // function show() {
+        //     console.log('keyup!');
+        // }
+
+        function show() {
+            var txt = document.getElementById("input1").value;
+            // console.log(txt);
+            document.getElementById("result").innerHTML = txt;
+            // 이렇게 함으로써 콘솔이 아닌 화면에 직접 출력
+        }
+
+
+    </script>
+</body>
+</html>

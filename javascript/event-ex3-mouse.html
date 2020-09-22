@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <img id="img1" onmouseover="on()" onmouseout="off()" src="pic_bulboff.gif" alt="">
+    <!-- id를 부여하면 함수 작성 시 편리 -->
+    <script>
+
+        function on() {
+            // console.log('on');
+            document.getElementById("img1").src='pic_bulbon.gif';
+            // 마우스 호버 시 불 들어옴
+        }
+
+        function off() {
+            document.getElementById("img1").src = 'pic_bulboff.gif';
+        }
+    </script>
+</body>
+</html>

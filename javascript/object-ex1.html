@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var carName = "kia";
+        var carWeight = 100;
+        var carColor = "black";
+
+        var car = {name:"kia", weight:100, color:"black"};
+        // 속성은 중괄호를 사용해 한번에 표시 가능.
+        // 여러개의 값을 갖고 있는 이것이 객체.
+        var myCar = {
+                name: "volvo",
+                weight: 99,
+                color: "white"
+            };
+
+        console.log(carName);
+        console.log(car.name); 
+        // 객체명과 프로퍼티명을 .으로 연결하여 표시
+
+        car.name = "hyundai";
+        console.log(car.name);
+        //property 변경
+        console.log(myCar.name);
+
+
+    </script>
+</body>
+</html>

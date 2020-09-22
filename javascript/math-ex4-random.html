@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .number {
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-align: center;
+            /* display: flex; 수평배치를 하고 싶으면 number div들을 감싸는 container에 적용 */
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #lotto {
+            background-color: blue;
+            font-style: 20px bold;
+            color: violet;
+            width: 100px;
+            height: 50px;
+            border: dashed salmon 3px;
+            margin: 40px 0px 40px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="lotto" onclick="lotto()">LOTTO</button>
+    <div class="container">
+
+        <div class="number" id="num1"></div>
+        <div class="number" id="num2"></div>
+        <div class="number" id="num3"></div>
+        <div class="number" id="num4"></div>
+        <div class="number" id="num5"></div>
+        <div class="number" id="num6"></div>
+    </div>
+    <script>
+
+        function getRandomNumber() {
+            return Math.floor(Math.random()*45) +1
+        }
+
+        // 반복되는 statement를 보다 간결하게 표시하기 위하여 별도의 함수로 따로 빼냄
+
+        function lotto() {
+            var r1 = getRandomNumber();
+            document.getElementById("num1").innerHTML = r1;
+
+            var r2 = getRandomNumber();
+            document.getElementById("num2").innerHTML = r2;
+
+            var r3 = getRandomNumber();
+            document.getElementById("num3").innerHTML = r3;
+
+            document.getElementById("num4").innerHTML = getRandomNumber();
+            document.getElementById("num5").innerHTML = getRandomNumber();
+            document.getElementById("num6").innerHTML = getRandomNumber();
+            // 이런 식으로 더 줄일 수도 있음
+            // 내일 반복문을 통하여 더욱 줄일 수 있는 방법을 배울 것임.
+        }
+    </script>
+</body>
+</html>
