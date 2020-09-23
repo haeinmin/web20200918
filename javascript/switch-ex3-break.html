@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        console.log('시작');
+
+        var age = 3;
+
+        switch (age) {
+            case 3:
+                console.log('실행3');
+                break;
+                // break가 없을 경우 다음 케이스에도 해당될 경우 다음 케이스까지 출력됨
+            case 2:
+                console.log('실행2');
+                break;
+            default:
+                console.log('기본');
+                break;
+                // 여기서는 break 생략 가능
+                // 이후 케이스가 없기 때문
+        }
+
+        console.log('끝');
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+
+    <input type="number" id="input1">
+    <button onclick="show()">구구단!</button>
+    <div id="result">
+
+    </div>
+    <script>
+
+        function show() {
+            var gugudan = document.getElementById("input1").value;
+            gugudan = Number(gugudan)
+
+            if (1 < gugudan && gugudan < 9) {
+                var txt = "";
+                for (var i = 1; i<= 9; i++) {
+                    txt += gugudan+ "&times;" + i + "=" + (gugudan*i) + "<br>";
+                // 여기서의 &times;는 기호일 뿐. 연산 기능은 없음.
+                }
+            }
+
+            else {
+                txt = "다시 입력해주세요."
+            }
+        
+        document.getElementById("result").innerHTML = txt;
+        }
+        
+    </script>
+</body>
+</html>
