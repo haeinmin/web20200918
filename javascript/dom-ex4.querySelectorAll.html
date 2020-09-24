@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 class="note" id="head1">Lorem.</h1>
+    <h1 class="note error" id="head2">Atque.</h1>
+    <h1 class="note error" id="head3">Non!</h1>
+    <h1 id="head4">Animi.</h1>
+    <h1 id="head5">Id?</h1>
+    <script>
+        var notes = document.querySelectorAll(".note");
+        // 이 경우 위에 class=note error인 element까지 셈
+        console.log(notes.length); //3
+
+        var ne = document.querySelectorAll(".note.error") //class가 note이면서 error인
+        console.log(ne.length); //2
+
+        for (var i=0; i< ne.length; i++) {
+            ne[i].innerHTML = "HELLO";
+        }
+
+
+
+    </script>
+</body>
+</html>

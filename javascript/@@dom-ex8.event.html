@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem.</h1>
+    <h1 onclick="show();" id="head2">Lorem, ipsum.</h1>
+    <h1 id="head3">Lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+
+    <script>
+
+        var h4 = document.getElementById("head4");
+        h4.addEventListener("click", show);
+        // 첫번쨰 parameter는 action
+        // 두번째 parameter에도 함수 자체를 넣어야 하기 때문에 () 붙이면 안 됨
+
+        var h3 = document.getElementById("head3");
+
+        h3.onclick = show;
+        // 얘는 함수 자체를 갖고 있는 것. 실행하라는 코드는 없음.
+        // 따라서 show();로 작성하면 틀린 것.
+        // 하지만 함수가 더 나중에 있음에도 실행된 이유는?
+        // js는 함수가 어디 있든 가장 먼저 끌어올려 읽음. hoisting
+
+        function show() {
+            for (var i = 0; i <3; i++) {
+                console.log(i);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

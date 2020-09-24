@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 class="note" id="head2">Praesentium!</h1>
+    <h1 class="note error" id="head3">Corporis.</h1>
+    <h1 class="note error" id="head4">Optio.</h1>
+    <h1 id="head5">Sunt!</h1>
+
+    <script>
+        var h1 = document.querySelector("#head1");
+        console.log(h1.innerHTML);
+
+        var h2 = document.querySelector(".note");
+        //querySelectorAll과 달리 이 경우 제일 위에 있는 요소 하나만 선택됨.
+        console.log(h2.innerHTML);
+
+        //내일 배우는 jquery의 경우 selector를 사용해 요소를 선택함.
+    </script>
+</body>
+</html>
