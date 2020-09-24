@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또 번호</button>
+    <div id="result"></div>
+    <script>
+        function lotto() {
+            var numbers = [];
+
+            // for (var i=0; i<6; i++) {
+                //단, 중복 방지 시 6개보다 적은 숫자가 나올 수도 있음.
+                //따라서 for문 대신 while문 사용하는 게 나음.
+            while (numbers.length <6) {
+                var newNumber=(Math.floor(Math.random()*45)+1);
+                if (!numbers.includes(newNumber)) { 
+                    //if 조건이 true면 실행되면 안 됨. 중복 방지 위하여. 따라서 not을 주기 위해 ! 추가.
+                    numbers.push(newNumber);
+                }
+            }
+            
+            var txt = "";
+            for (var i=0; i < numbers.length; i++) {
+                txt += "<div>" +numbers[i] + "</div>";
+                //예) <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            }
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

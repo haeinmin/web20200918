@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var heroes = [
+            "ironman", 
+            "blackwidow", 
+            "captainmarvel", 
+            "antman",
+            "thor",
+            "deadpool"
+        ];
+
+        heroes.splice(0, 1);
+        //0번부터 하나 지울 것이다.
+
+        for (var i=0; i<heroes.length; i++) {
+            console.log(heroes[i]);
+        }
+
+        console.log('----------------');
+
+        heroes.splice(0, 1, "batman", "superman");
+        //이 경우 0번자리 하나를 지우고 그 자리에 삽입한 것.
+
+        for (var i=0; i<heroes.length; i++) {
+            console.log(heroes[i]);
+        }
+    </script>
+</body>
+</html>

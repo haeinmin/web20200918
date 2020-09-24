@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">,
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var heroes = [
+            "ironman", 
+            "blackwidow", 
+            "captainmarvel", 
+            "antman",
+            "thor",
+            "deadpool"
+        ];
+
+        for (var i = 0; i <heroes.length; i++) {
+            console.log(heroes[i]);
+        }
+
+        // push()
+        heroes.push("xmen");
+        console.log(heroes.length);
+        for (var i=0; i< heroes.length; i++) {
+            console.log(heroes[i]);
+        }
+
+        // pop() 마지막 것을 꺼냄
+        heroes.pop();
+        console.log(heroes.length);
+        for (var i=0; i< heroes.length; i++) {
+            console.log(heroes[i]);
+        }
+    </script>
+</body>
+</html>
