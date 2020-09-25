@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        
+        $(document).ready(function() {
+            console.log("dom loaded");
+            $("#head1").hide();
+            $("#head1").click(function () {
+            console.log("hello");
+        });
+        });
+    </script>
+
+    <h1 id="head1">Lorem.</h1>
+    <!-- 순서가 event 또는 function 먼저 나올 경우 dom 완성 이전 나오므로 아무런 영향x -->
+    <!-- 위처럼 ready event를 내부에 넣음으로써 dom 완성되면 해당 함수가 작동하도록 함. -->
+    <!-- 따라서 더 이상 body element 내에 script element 넣을 필요가 없음.-->
+    <!-- body에는 page에 출력될 내용만 넣으면 됨. -->
+</body>
+</html>

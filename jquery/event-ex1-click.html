@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello')" id="head1">Lorem.</h1>
+    <h1 id="head2">Lorem.</h1>
+    <h1 id="head3">Lorem.</h1>
+    <h1 id="head4">Lorem.</h1>
+    <script>
+        function myFunc() {
+            console.log('my function');
+        }
+
+        var afunc = function() {
+            console.log("이름없는 함수");
+        }
+        
+        $("#head4").click(function () {
+            console.log("이름없는 함수2222");
+        });
+
+        ////head3처럼 펑션을 따로 작성하고 parameter에 넣나,
+        //head4처럼 한번에 작성하나 결과는 같음.
+
+        $("#head3").click(afunc);
+        $("#head2").click(myFunc);
+        $("#head1").click();
+
+    </script>
+    <!-- h1 클릭하지 않아도 console 확인 시 페이지 새로고침하면 hello 출력되어 있음.
+    이미 함수를 읽은 것.
+    하지만 h2의 경우 새로고침 시 없음. -->
+</body>
+</html>
