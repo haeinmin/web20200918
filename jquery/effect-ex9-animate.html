@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+        .mydiv {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    width: "700px", //여러 효과를 넣고 싶으면 comma로 연결
+                    height: "+=500px", //기존 크기를 기준으로 크기 조절
+                    fontSize: "30px",
+                    left: "100px"
+                }, 3000 );
+                //두번째 parameter로 animation의 속도 조절
+                
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="mydiv">Lorem, ipsum dolor.</div>
+</body>
+</html>
