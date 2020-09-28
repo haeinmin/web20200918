@@ -10,8 +10,8 @@
     <script>
         $(document).ready(function() {
             $("#input1").keyup(function() {
-                // var l =$("#input1").val(); 이렇게 작성했었음. 틀림!
-                var l = $(this).val();
+                var l =$("#input1").val(); 
+                // var l = $(this).val();
 
                 $("#link1").attr("href", l);
             });
