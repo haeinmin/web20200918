@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+
+        .error {
+            text-decoration: line-through;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").addClass("note"); 
+            //이 경우 div inline에 class 주지 않았어도 class 부여됨
+            $("#div2").addClass("note error");
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eius libero non facilis eos nemo! Accusamus soluta numquam nisi incidunt provident dolorem perferendis, facilis doloribus, ut, vero veritatis nihil unde?</div>
+    <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium enim saepe eaque ratione earum impedit quod nihil laborum cumque veritatis numquam nostrum repudiandae quisquam ipsam distinctio ab, illo voluptatibus magnam.    </div>
+</body>
+</html>
