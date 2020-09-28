@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+                var i1 = $("#input1").val();
+                var i2 = $("#input2").val();
+                var minus = Math.abs(i1 - i2);
+                $("#div1").append(minus);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="input1" type="number">
+    <input id="input2" type="number">
+    <br>
+    <button id="btn1">두 값의 차이</button>
+    <div id="div1"></div>
+</body>
+</html>

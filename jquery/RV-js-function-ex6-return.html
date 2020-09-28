@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                var i1 = $("#input1").val();
+                i1 = Number(i1)
+                var i2 = $("#input2").val();
+                i2 = Number(i2)
+                var sum = i1 + i2
+                $("#div1").append(sum)
+            });
+
+            $("#btn2").click(function() {
+                var i3 = $("#input3").val();
+                i3 = Number(i3)
+                var i4 = $("#input4").val();
+                i4 = Number(i4)
+                var minus = i3 - i4
+                $("#div2").append(minus)
+            });
+
+            $("#btn3").click(function() {
+                var i5 = $("#input5").val();
+                i5 = Number(i5)
+                var i6 = $("#input6").val();
+                i6 = Number(i6)
+                var times = i5 * i6
+                $("#div3").append(times)
+            });
+
+            $("#btn4").click(function() {
+                var i7 = $("#input7").val();
+                i7 = Number(i7)
+                var i8 = $("#input8").val();
+                i8 = Number(i8)
+                var divide = i7 / i8
+                $("#div4").append(divide)
+            });
+            
+
+        });
+    </script>
+</head>
+<body>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <button id="btn1"><i class="fas fa-plus"></i></button>
+    <div id="div1"></div>
+    <input type="number" id="input3">
+    <input type="number" id="input4">
+    <button id="btn2"><i class="fas fa-minus"></i></button>
+    <div id="div2"></div>
+    <input type="number" id="input5">
+    <input type="number" id="input6">
+    <button id="btn3"><i class="fas fa-times"></i></button>
+    <div id="div3"></div>
+    <input type="number" id="input7">
+    <input type="number" id="input8">
+    <button id="btn4"><i class="fas fa-divide"></i></button>
+    <div id="div4"></div>
+</body>
+</html>
